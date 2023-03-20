@@ -1,0 +1,689 @@
+/* "*" belgisi barcha elementlarga murojaatni anglatadi*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Lato";
+}
+
+/*bloklarning width ni o`zgarishini verstka uchun qulay qilib beradi*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*quyidagi teglarni blok qilib beradi*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*elementlarning hossalarini barcha brauzerlar uchun mo`tadillashtirib beradi*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjusst: 100%;
+  -moz-text-size-adjusst: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*quyidagi teglarning shriftlar oilasini vorislashi taminlanadi*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*turli brauzerlarning o`ziga xos hususiyatlarini olib tashlash*/
+input:-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:-moz-focus-innesr {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*sarlavharning odatdagi stillarini nullashtirish*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  max-width: 1440px;
+  padding: 0 40px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 66px 17px 84px;
+}
+.head__contact {
+  font-size: 17px;
+  font-weight: 500;
+  color: #2F80ED;
+  line-height: 21px;
+}
+.head ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 45px;
+}
+.head ul li {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.hero {
+  position: relative;
+  max-width: 1360px;
+  max-height: 711px;
+  margin-bottom: 112px;
+}
+.hero .hero__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero__chack {
+  position: absolute;
+  left: 53px;
+  top: 212px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.hero__circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.hero__title {
+  font-size: 50px;
+  font-weight: 500;
+  max-width: 651px;
+  color: white;
+  position: absolute;
+  line-height: 54px;
+  top: 514px;
+  left: 49px;
+}
+.hero__subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  top: 637px;
+  left: 53px;
+}
+.hero__btn {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 36px;
+  color: white;
+  position: absolute;
+  border-radius: 10px;
+  background: #2F80ED;
+  right: 67px;
+  top: 665px;
+  max-width: 521px;
+  max-height: 91px;
+  padding: 29px 141px 26px;
+}
+
+.about {
+  display: flex;
+  gap: 25px;
+}
+.about__left img {
+  max-width: 961px;
+  max-height: 351px;
+}
+.about__description {
+  max-width: 961px;
+  max-height: 436px;
+  padding: 48px 48px 55px 51px;
+  background: white;
+  margin-bottom: 25px;
+  box-shadow: 0px 14px 60px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+.about__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 54px;
+  margin-bottom: 28px;
+  color: #434343;
+}
+.about__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #757575;
+}
+.about__text:not(:last-child) {
+  margin-bottom: 23px;
+}
+.about__right .about__right-img1 {
+  margin-bottom: 25px;
+  max-width: 367px;
+  max-height: 317px;
+}
+.about__right .about__right-img2 {
+  max-width: 367px;
+  max-height: 470px;
+}
+
+.rooms {
+  margin-bottom: 90px;
+}
+.rooms__title {
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 48px;
+}
+.rooms__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 322px);
+  gap: 23px;
+}
+.rooms__item {
+  max-width: 323px;
+  max-height: 429px;
+  box-shadow: 0px 14px 60px rgba(0, 0, 0, 0.12);
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+.rooms__description {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  padding: 22px 31px 37px 21px;
+  color: #555555;
+}
+.rooms__price {
+  display: flex;
+  align-items: end;
+  gap: 7px;
+  font-weight: 600;
+  font-size: 37px;
+  line-height: 45px;
+  padding: 0 69px 30px 21px;
+}
+.rooms__price h2 {
+  color: #2D9CDB;
+}
+.rooms__price p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 8px;
+  color: #989898;
+}
+
+.service {
+  margin-bottom: 92px;
+}
+.service__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 54px;
+  margin-bottom: 48px;
+}
+.service__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 22px;
+}
+.service__card img {
+  width: 100%;
+}
+.service__card:first-child {
+  grid-row: 1/3;
+}
+.service__card:last-child {
+  grid-column: 2/4;
+}
+
+.videos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 470px;
+  padding-left: 21px;
+  margin-bottom: 92px;
+}
+.videos__title h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 63px;
+  line-height: 68px;
+  color: #434343;
+}
+.videos__title h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 91px;
+  line-height: 100px;
+  color: #2F80ED;
+}
+.videos__video {
+  position: relative;
+  max-width: 743px;
+  max-height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.videos__rectangle {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+.videos__ellipse {
+  position: absolute;
+}
+.videos__group {
+  position: absolute;
+}
+.videos__polygon {
+  position: absolute;
+}
+
+.comfort {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  max-height: 385px;
+  margin-bottom: 143px;
+  box-shadow: 0px 14px 90px rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+}
+.comfort__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 54px;
+  color: #434343;
+  margin: 48px 0 28px 49px;
+}
+.comfort__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #757575;
+  margin: 0 0 27px 51px;
+  max-width: 580px;
+  max-height: 200px;
+}
+.comfort__subtitle2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #757575;
+  max-width: 570px;
+  max-height: 200px;
+  margin: 0 0 54px 51px;
+}
+.comfort__image {
+  max-width: 547px;
+  max-height: 385px;
+}
+.comfort__image img {
+  width: 100%;
+}
+
+.clients {
+  margin-bottom: 85px;
+}
+.clients__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 54px;
+  color: #434343;
+  margin-bottom: 43px;
+}
+.clients__cards {
+  display: flex;
+  gap: 23px;
+  margin-bottom: 43px;
+}
+.clients__card {
+  background: white;
+  box-shadow: 0px 14px 60px rgba(0, 0, 0, 0.07);
+  border-radius: 22px;
+  padding: 31px 38px 38px 33px;
+}
+.clients__logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  background: #E0E0E0;
+  border-radius: 60px;
+  max-width: 125px;
+  max-height: 49px;
+  margin-bottom: 26px;
+  padding: 9px 21px 8px 12px;
+}
+.clients__logo p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.22em;
+  color: #757575;
+}
+.clients__yandex {
+  max-width: 32px;
+  max-height: 32px;
+  background: white;
+  border-radius: 50%;
+  padding: 5px 5px 5px 4px;
+  border: 1px solid #D3D3D3;
+}
+.clients__yandex img {
+  max-width: 22px;
+  max-height: 22px;
+}
+.clients__decription {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #757575;
+  margin-bottom: 33px;
+}
+.clients__info {
+  display: flex;
+  gap: 21px;
+}
+.clients__image {
+  max-width: 65px;
+  max-height: 65px;
+  border-radius: 50%;
+}
+.clients__image img {
+  width: 100%;
+}
+.clients__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-bottom: 5px;
+}
+.clients__day {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 33px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  padding: 26px 72px;
+  background: #2F80ED;
+  border-radius: 10px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.location {
+  position: relative;
+  width: 100%;
+  margin-bottom: 85px;
+  max-height: 657px;
+  filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07));
+  border-radius: 20px;
+}
+.location__image img {
+  width: 100%;
+  border-radius: 15px;
+}
+.location__decription {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 529px;
+  max-height: 398px;
+  padding: 44px 78px 42px 52px;
+  background: #FFFFFF;
+  border-radius: 50px 0 20px 0;
+  box-shadow: -15px -16px 60px rgba(0, 0, 0, 0.08);
+}
+.location__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41px;
+  line-height: 45px;
+  color: #535353;
+  margin-bottom: 16px;
+}
+.location__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #757575;
+  margin-bottom: 39px;
+}
+.location__button {
+  padding: 26px 53px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  background: #2F80ED;
+  border-radius: 10px;
+}
+
+.contact {
+  max-width: 1360px;
+  max-height: 495px;
+  position: relative;
+  filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07));
+  border-radius: 10px;
+}
+.contact__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+}
+.contact__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 54px;
+  position: absolute;
+  top: 289px;
+  left: 32px;
+  color: white;
+}
+.contact__messengers {
+  display: flex;
+  justify-content: start;
+  gap: 25px;
+  position: absolute;
+  top: 375px;
+  left: 32px;
+  width: 100%;
+}
+.contact__messengers p {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 28px;
+  color: white;
+}
+.contact__messenger {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  max-width: 328px;
+  height: 82px;
+  background: rgba(238, 238, 238, 0.32);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border-radius: 130px;
+  padding-right: 62px;
+}
+.contact__messenger:first-child .contact__icon {
+  background: #2F80ED;
+  border-radius: 50%;
+}
+.contact__messenger:nth-child(2) .contact__icon {
+  background: #58D063;
+  border-radius: 50%;
+}
+.contact__messenger:last-child .contact__icon {
+  background: #2AABEE;
+  border-radius: 50%;
+}
+.contact__icon {
+  max-width: 82px;
+  max-height: 82px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__icon img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.footer {
+  margin-top: 73px;
+  background: #FFFFFF;
+  box-shadow: 0px 14px 60px rgba(0, 0, 0, 0.07);
+  border-radius: 22px 22px 0 0;
+  padding: 46px 33px 0;
+}
+.footer__title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  border-bottom: 2px solid #CACACA;
+}
+.footer__title h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 54px;
+  color: #2F80ED;
+}
+.footer__title .plaza {
+  color: #43C453;
+}
+.footer__title p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  color: #2F80ED;
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 31px 0 52px;
+}
+.footer__menu ul {
+  display: flex;
+  gap: 45px;
+}
+.footer__menu ul li {
+  color: #808080;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer__menu h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #808080;
+}
