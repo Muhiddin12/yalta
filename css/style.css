@@ -98,6 +98,7 @@ h6 {
   padding: 0 40px;
   margin: 0 auto;
   min-height: 100vh;
+  background: #e9e7e7;
 }
 
 .container {
@@ -111,8 +112,10 @@ h6 {
   padding: 22px 66px 17px 84px;
 }
 .head__contact {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
   font-size: 17px;
-  font-weight: 500;
   color: #2F80ED;
   line-height: 21px;
 }
@@ -124,6 +127,8 @@ h6 {
 .head ul li {
   font-size: 17px;
   font-weight: 500;
+  font-family: "Inter";
+  font-style: normal;
 }
 
 .hero {
@@ -152,6 +157,8 @@ h6 {
   background: rgba(255, 255, 255, 0.3);
 }
 .hero__title {
+  font-family: "Inter";
+  font-style: normal;
   font-size: 50px;
   font-weight: 500;
   max-width: 651px;
@@ -162,6 +169,8 @@ h6 {
   left: 49px;
 }
 .hero__subtitle {
+  font-family: "Inter";
+  font-style: normal;
   font-size: 18px;
   font-weight: 500;
   color: white;
@@ -170,8 +179,10 @@ h6 {
   left: 53px;
 }
 .hero__btn {
-  font-size: 30px;
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
+  font-size: 30px;
   letter-spacing: 1px;
   line-height: 36px;
   color: white;
@@ -188,10 +199,8 @@ h6 {
 .about {
   display: flex;
   gap: 25px;
-}
-.about__left img {
-  max-width: 961px;
-  max-height: 351px;
+  max-width: 1360px;
+  margin-bottom: 104px;
 }
 .about__description {
   max-width: 961px;
@@ -203,6 +212,7 @@ h6 {
   border-radius: 10px;
 }
 .about__title {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 50px;
@@ -211,6 +221,7 @@ h6 {
   color: #434343;
 }
 .about__text {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -220,20 +231,34 @@ h6 {
 .about__text:not(:last-child) {
   margin-bottom: 23px;
 }
-.about__right .about__right-img1 {
-  margin-bottom: 25px;
+.about__img1 {
+  max-width: 961px;
+  max-height: 351px;
+}
+.about__img1 img {
+  width: 100%;
+}
+.about__img2 {
   max-width: 367px;
   max-height: 317px;
+  margin-bottom: 25px;
 }
-.about__right .about__right-img2 {
+.about__img2 img {
+  width: 100%;
+}
+.about__img3 {
   max-width: 367px;
   max-height: 470px;
 }
-
+.about__img3 img {
+  width: 100%;
+}
 .rooms {
   margin-bottom: 90px;
 }
 .rooms__title {
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
   font-size: 50px;
   margin-bottom: 48px;
@@ -251,8 +276,10 @@ h6 {
   border-radius: 12px;
 }
 .rooms__description {
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 21px;
   padding: 22px 31px 37px 21px;
   color: #555555;
@@ -264,23 +291,32 @@ h6 {
   font-weight: 600;
   font-size: 37px;
   line-height: 45px;
-  padding: 0 69px 30px 21px;
+  padding: 0 0 30px 21px;
 }
 .rooms__price h2 {
   color: #2D9CDB;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 37px;
+  line-height: 45px;
 }
 .rooms__price p {
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  padding-bottom: 8px;
   color: #989898;
+  margin-bottom: 5px;
 }
 
 .service {
   margin-bottom: 92px;
 }
 .service__title {
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
   font-size: 50px;
   line-height: 54px;
@@ -308,6 +344,7 @@ h6 {
   max-height: 470px;
   padding-left: 21px;
   margin-bottom: 92px;
+  width: 100%;
 }
 .videos__title h2 {
   font-family: "Inter";
@@ -327,7 +364,6 @@ h6 {
 }
 .videos__video {
   position: relative;
-  max-width: 743px;
   max-height: 470px;
   display: flex;
   justify-content: center;
@@ -336,6 +372,8 @@ h6 {
 .videos__rectangle {
   position: relative;
   top: 0;
+}
+.videos__rectangle img {
   width: 100%;
 }
 .videos__ellipse {
@@ -374,7 +412,7 @@ h6 {
   line-height: 25px;
   color: #757575;
   margin: 0 0 27px 51px;
-  max-width: 580px;
+  max-width: 675px;
   max-height: 200px;
 }
 .comfort__subtitle2 {
@@ -384,13 +422,14 @@ h6 {
   font-size: 20px;
   line-height: 25px;
   color: #757575;
-  max-width: 570px;
+  max-width: 675px;
   max-height: 200px;
   margin: 0 0 54px 51px;
 }
 .comfort__image {
   max-width: 547px;
   max-height: 385px;
+  margin-left: 87px;
 }
 .comfort__image img {
   width: 100%;
@@ -576,6 +615,8 @@ h6 {
   top: 0;
 }
 .contact__title {
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
   font-size: 50px;
   line-height: 54px;
@@ -591,9 +632,10 @@ h6 {
   position: absolute;
   top: 375px;
   left: 32px;
-  width: 100%;
 }
 .contact__messengers p {
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
   font-size: 26px;
   line-height: 28px;
@@ -603,13 +645,12 @@ h6 {
   display: flex;
   gap: 28px;
   align-items: center;
-  max-width: 328px;
   height: 82px;
   background: rgba(238, 238, 238, 0.32);
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
   border-radius: 130px;
-  padding-right: 62px;
+  padding-right: 51px;
 }
 .contact__messenger:first-child .contact__icon {
   background: #2F80ED;
@@ -650,6 +691,7 @@ h6 {
   border-bottom: 2px solid #CACACA;
 }
 .footer__title h2 {
+  font-family: "Fuzzy Bubbles";
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -657,9 +699,11 @@ h6 {
   color: #2F80ED;
 }
 .footer__title .plaza {
+  font-family: "Fuzzy Bubbles";
   color: #43C453;
 }
 .footer__title p {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
@@ -677,11 +721,15 @@ h6 {
 }
 .footer__menu ul li {
   color: #808080;
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
 }
 .footer__menu h4 {
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
