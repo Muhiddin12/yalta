@@ -118,6 +118,7 @@ h6 {
   font-size: 17px;
   color: #2F80ED;
   line-height: 21px;
+  cursor: pointer;
 }
 .head ul {
   display: flex;
@@ -129,6 +130,7 @@ h6 {
   font-weight: 500;
   font-family: "Inter";
   font-style: normal;
+  cursor: pointer;
 }
 
 .hero {
@@ -144,17 +146,26 @@ h6 {
 }
 .hero__chack {
   position: absolute;
-  left: 53px;
-  top: 212px;
+  left: 3.9%;
+  top: 29.9%;
   gap: 16px;
   display: flex;
   flex-direction: column;
+}
+.hero__chack input {
+  background: #000;
+  color: #000;
 }
 .hero__circle {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.3);
+}
+.hero__info {
+  position: absolute;
+  top: 68%;
+  left: 3.6%;
 }
 .hero__title {
   font-family: "Inter";
@@ -163,10 +174,8 @@ h6 {
   font-weight: 500;
   max-width: 651px;
   color: white;
-  position: absolute;
-  line-height: 54px;
-  top: 514px;
-  left: 49px;
+  line-height: 106%;
+  margin-bottom: 16px;
 }
 .hero__subtitle {
   font-family: "Inter";
@@ -174,9 +183,7 @@ h6 {
   font-size: 18px;
   font-weight: 500;
   color: white;
-  position: absolute;
-  top: 637px;
-  left: 53px;
+  margin-left: 4px;
 }
 .hero__btn {
   font-family: "Inter";
@@ -189,11 +196,11 @@ h6 {
   position: absolute;
   border-radius: 10px;
   background: #2F80ED;
-  right: 67px;
-  top: 665px;
+  right: 5%;
+  bottom: -6%;
   max-width: 521px;
   max-height: 91px;
-  padding: 29px 141px 26px;
+  padding: 2.2% 10.2% 2.1%;
 }
 
 .about {
@@ -267,6 +274,8 @@ h6 {
   display: grid;
   grid-template-columns: repeat(auto-fit, 322px);
   gap: 23px;
+  justify-content: center;
+  align-items: center;
 }
 .rooms__item {
   max-width: 323px;
@@ -448,9 +457,12 @@ h6 {
   margin-bottom: 43px;
 }
 .clients__cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 438px);
   gap: 23px;
   margin-bottom: 43px;
+  justify-content: center;
+  align-items: center;
 }
 .clients__card {
   background: white;
@@ -614,43 +626,49 @@ h6 {
   position: relative;
   top: 0;
 }
+.contact__info {
+  margin-top: -16%;
+  padding-left: 32px;
+  width: 100%;
+  display: none;
+}
 .contact__title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 50px;
   line-height: 54px;
-  position: absolute;
-  top: 289px;
-  left: 32px;
   color: white;
+  margin-bottom: 31px;
+  position: relative;
 }
 .contact__messengers {
+  width: 100%;
   display: flex;
   justify-content: start;
   gap: 25px;
-  position: absolute;
-  top: 375px;
-  left: 32px;
 }
-.contact__messengers p {
+.contact__messenger {
+  display: flex;
+  gap: 22.5%;
+  align-items: center;
+  width: 21%;
+  height: 82px;
+  background: rgba(238, 238, 238, 0.32);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border-radius: 130px;
+  padding-right: 15%;
+  cursor: pointer;
+}
+.contact__messenger p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 26px;
   line-height: 28px;
   color: white;
-}
-.contact__messenger {
-  display: flex;
-  gap: 28px;
-  align-items: center;
-  height: 82px;
-  background: rgba(238, 238, 238, 0.32);
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
-  border-radius: 130px;
-  padding-right: 51px;
+  white-space: nowrap;
 }
 .contact__messenger:first-child .contact__icon {
   background: #2F80ED;
@@ -665,8 +683,8 @@ h6 {
   border-radius: 50%;
 }
 .contact__icon {
-  max-width: 82px;
-  max-height: 82px;
+  width: 100%;
+  height: 100%;
   padding: 25px;
   display: flex;
   justify-content: center;
@@ -697,10 +715,12 @@ h6 {
   font-size: 50px;
   line-height: 54px;
   color: #2F80ED;
+  cursor: pointer;
 }
 .footer__title .plaza {
   font-family: "Fuzzy Bubbles";
   color: #43C453;
+  cursor: pointer;
 }
 .footer__title p {
   font-family: "Inter";
@@ -709,6 +729,7 @@ h6 {
   font-size: 34px;
   line-height: 41px;
   color: #2F80ED;
+  cursor: pointer;
 }
 .footer__menu {
   display: flex;
@@ -726,6 +747,7 @@ h6 {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  cursor: pointer;
 }
 .footer__menu h4 {
   font-family: "Inter";
@@ -734,4 +756,5 @@ h6 {
   font-size: 16px;
   line-height: 19px;
   color: #808080;
+  cursor: pointer;
 }

@@ -122,6 +122,7 @@ h6 {
     font-size: 17px;
     color: #2F80ED;
     line-height: 21px;
+    cursor: pointer;
   }
 
   ul {
@@ -134,6 +135,7 @@ h6 {
       font-weight: 500;
       font-family: 'Inter';
       font-style: normal;
+      cursor: pointer;
     }
   }
 }
@@ -158,11 +160,16 @@ h6 {
 
   &__chack {
     position: absolute;
-    left: 53px;
-    top: 212px;
+    left: 3.9%;
+    top: 29.9%;
     gap: 16px;
     display: flex;
     flex-direction: column;
+
+    input {
+      background: #000;
+      color: #000;
+    }
   }
 
   &__circle {
@@ -172,17 +179,31 @@ h6 {
     background: rgba(255, 255, 255, 0.3);
   }
 
+  &__info {
+    position: absolute;
+    top: 68%;
+    left: 3.6%;
+  }
+
   &__title {
     font-family: 'Inter';
     font-style: normal;
+    // font-size: 300%;
     font-size: 50px;
+    // font-size: calc(.2vw + 3.36rem);
     font-weight: 500;
     max-width: 651px;
     color: white;
-    position: absolute;
-    line-height: 54px;
-    top: 514px;
-    left: 49px;
+    line-height: 106%;
+    margin-bottom: 16px;
+
+
+    // @media (max-width: 1440px) {
+    //   font-family: 'Inter';
+    //   font-style: normal;
+    //   font-weight: 500;
+    //   font-size: calc(.2vw + 2.7rem);
+    // }
   }
 
   &__subtitle {
@@ -191,9 +212,7 @@ h6 {
     font-size: 18px;
     font-weight: 500;
     color: white;
-    position: absolute;
-    top: 637px;
-    left: 53px;
+    margin-left: 4px;
   }
 
   &__btn {
@@ -207,11 +226,12 @@ h6 {
     position: absolute;
     border-radius: 10px;
     background: #2F80ED;
-    right: 67px;
-    top: 665px;
+    right: 5%;
+    bottom: -6%;
     max-width: 521px;
     max-height: 91px;
-    padding: 29px 141px 26px;
+    // padding: 29px 141px 26px;
+    padding: 2.2% 10.2% 2.1%;
   }
 
 }
@@ -314,6 +334,8 @@ h6 {
     display: grid;
     grid-template-columns: repeat(auto-fit, 322px);
     gap: 23px;
+    justify-content: center;
+    align-items: center;
   }
 
   &__item {
@@ -539,9 +561,12 @@ h6 {
   }
 
   &__cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 438px);
     gap: 23px;
     margin-bottom: 43px;
+    justify-content: center;
+    align-items: center;
   }
 
   &__card {
@@ -723,6 +748,7 @@ h6 {
 .contact {
   max-width: 1360px;
   max-height: 495px;
+  // height: 100%;
   position: relative;
   filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07));
   border-radius: 10px;
@@ -735,25 +761,48 @@ h6 {
     top: 0;
   }
 
+  &__info {
+    // position: relative;
+    margin-top: -16%;
+
+    // top: 289px;
+    padding-left: 32px;
+    width: 100%;
+    display: none;
+  }
+
   &__title {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
     line-height: 54px;
-    position: absolute;
-    top: 289px;
-    left: 32px;
     color: white;
+    margin-bottom: 31px;
+    position: relative;
+    // font-size: calc(.2vw + 2.7rem);
   }
 
   &__messengers {
+    width: 100%;
     display: flex;
     justify-content: start;
     gap: 25px;
-    position: absolute;
-    top: 375px;
-    left: 32px;
+  }
+
+  &__messenger {
+    display: flex;
+    // justify-content: space-between;
+    gap: 22.5%;
+    align-items: center;
+    // max-width: 327px;
+    width: 21%;
+    height: 82px;
+    background: rgba(238, 238, 238, 0.32);
+    backdrop-filter: blur(7px);
+    border-radius: 130px;
+    padding-right: 15%;
+    cursor: pointer;
 
     p {
       font-family: 'Inter';
@@ -762,18 +811,8 @@ h6 {
       font-size: 26px;
       line-height: 28px;
       color: white;
+      white-space: nowrap;
     }
-  }
-
-  &__messenger {
-    display: flex;
-    gap: 28px;
-    align-items: center;
-    height: 82px;
-    background: rgba(238, 238, 238, 0.32);
-    backdrop-filter: blur(7px);
-    border-radius: 130px;
-    padding-right: 51px;
   }
 
   &__messenger:first-child &__icon {
@@ -792,8 +831,10 @@ h6 {
   }
 
   &__icon {
-    max-width: 82px;
-    max-height: 82px;
+    // max-width: 82px;
+    width: 100%;
+    // max-height: 82px;
+    height: 100%;
     padding: 25px;
     display: flex;
     justify-content: center;
@@ -801,6 +842,7 @@ h6 {
 
     img {
       max-width: 30px;
+      // width: 100%;
       max-height: 30px;
     }
   }
@@ -829,11 +871,13 @@ h6 {
       font-size: 50px;
       line-height: 54px;
       color: #2F80ED;
+      cursor: pointer;
     }
 
     .plaza {
       font-family: 'Fuzzy Bubbles';
       color: #43C453;
+      cursor: pointer;
     }
 
     p {
@@ -843,6 +887,7 @@ h6 {
       font-size: 34px;
       line-height: 41px;
       color: #2F80ED;
+      cursor: pointer;
     }
   }
 
@@ -862,6 +907,7 @@ h6 {
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
+        cursor: pointer;
       }
     }
 
@@ -872,6 +918,7 @@ h6 {
       font-size: 16px;
       line-height: 19px;
       color: #808080;
+      cursor: pointer;
     }
   }
 }
